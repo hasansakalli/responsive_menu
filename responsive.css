@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(96, 122, 211);
+  position: absolute;
+  padding-top: 1rem;
+  width: 100%;
+}
+
+.nav_container {
+  display: flex;
+  flex-direction: column;
+  
+}
+nav ul {
+  list-style: none;
+ }
+
+nav ul li {
+  
+  background-color: rgb(0, 0, 0);
+  padding: 0.8em;
+  color: white;
+  text-align: left;
+  font-size: 20px;
+}
+
+.logo {
+  font-size: 50px;
+  text-align: center;
+}
+
+/*****************************/
+/******563px ile 768px arası********/
+
+@media screen and (min-width: 563px) {
+  nav ul {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    
+    gap: 3px;
+    margin-bottom: 0.5em;
+  }
+
+ 
+}
+
+/*****************************/
+/************768 pixel üstü*****/
+@media screen and (min-width: 768px) {
+    .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.5em;
+    }
+  
+   
+  }
+  /*****************************/
+
